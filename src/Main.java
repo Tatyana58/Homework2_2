@@ -44,9 +44,9 @@ public class Main {
         //Три учительницы закупили все вместе 480 листов бумаги на все три класса.
         // Посчитайте, сколько достанется листов каждому ученику.
         //Результат задачи выведите в консоль в формате "На каждого ученика рассчитано … листов бумаги".
-        short teacherLP = 23;
-        short teacherAS = 27;
-        short teacherEA = 30;
+        byte teacherLP = 23;
+        byte teacherAS = 27;
+        byte teacherEA = 30;
         short sumList = 480;
         short sumChild= (short) (teacherEA+teacherAS+teacherLP);
         short listChild= (short) (sumList/sumChild);
@@ -101,7 +101,40 @@ public class Main {
         System.out.println("В школе, где "+totalRoom+" классов, нужно "+sumWait+" банок белой краски и "+sumBraun+" банок коричневой краски");
         System.out.println("");
 
+        //Задача 6.
+        //Повар, когда готовит еду, взвешивает все продукты, чтобы добиться нужной консистенции.
+        //То же делают и спортсмены, которые сидят на правильном питании и тщательно относятся к тому,
+        // что и сколько они едят.
+        //Вот один из рецептов, который использует наш спортсмен перед тренировкой:
+        //Бананы – 5 штук (1 банан - 80 грамм);
+        //Молоко – 200 мл (100 мл = 105 грамм);
+        //Мороженое пломбир – 2 брикета по 100 грамм;
+        //Яйца сырые – 4 яйца (1 яйцо - 70 грамм).
+        //Смешать всё в блендере и готово.
+        //Подсчитайте вес (количество грамм) такого спорт-завтрака, а затем переведите его в килограммы.
+        //Результат напечатайте в консоль.
+        //Важное условие: если в рецепт нужно добавить несколько единиц какого-то продукта (с определенным весом),
+        // то нужно умножать количество единиц на вес в граммах.
+        // Например, если в рецепте указано, что нужно добавить 5 бананов по 80 грамм,
+        // то нужно количество (5 бананов) умножить на вес одного (80 грамм), а не считать самому общую сумму грамм.
+
         System.out.println("Задание 6 ");
+        byte bananaWeight=80;
+        byte bananaPieces=5;
+        byte milkWeight=105;
+        byte milkPieces=2;
+        byte iceCreamWeight=100;
+        byte iceCreamPieces=2;
+        byte eggWeight=70;
+        byte eggPieces=4;
+        short totalBananaWeight= (short) (bananaWeight*bananaPieces);
+        short totalMilkWeight= (short) (milkWeight*milkPieces);
+        short totalIceCreamWeight= (short) (iceCreamWeight*iceCreamPieces);
+        short totalEggWeight= (short) (eggWeight*eggPieces);
+        short weingBreakfastGR= (short) (totalBananaWeight+totalEggWeight+totalMilkWeight+totalIceCreamWeight);
+        System.out.println("Вес такого спорт-завтрака = "+weingBreakfastGR+" грамм.");
+        float weingBreakfastKG = (short) weingBreakfastGR/1000f;
+        System.out.println("Вес такого спорт-завтрака "+weingBreakfastKG+" килограмм.");
         System.out.println("");
 
         System.out.println("Задание 7 ");
