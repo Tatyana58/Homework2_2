@@ -7,14 +7,13 @@ public class Main {
         // должно придерживаться правила camelCase.
         // Выведите в консоль значение каждой переменной в формате
         // "Значение переменной … с типом … равно …"
-
+        System.out.println("Задание 1 ");
         int billion = 1000000000;
         byte hundred = 100;
         short thousand = 30000;
         long trillion = 4000000000L;
         float smallDecimal =-0.1f;
         double bigDecimal = 0.6666666;
-        System.out.println("Задание 1 ");
         System.out.println("Значение переменной billion с типом int равно " + billion);
         System.out.println("Значение переменной hundred с типом byte равно " + hundred);
         System.out.println("Значение переменной thousand с типом short равно " + thousand);
@@ -192,24 +191,24 @@ public class Main {
         int denisDif=denisNewYear-denisYear;
         int krisDif=krisNewYear-krisYear;
         System.out.println("Сведения о Маше : ");
-        System.out.println("Получала               = "+masha+" рублей. ");
+        System.out.println("Текущая зар. плата     = "+masha+" рублей. ");
         System.out.println("Текущий Годовой доход  = "+mashaYear+" рублей");
-        System.out.println("С повышением 10% зп    = "+mashaNew+" рублей. ");
-        System.out.println("Годовой доход составил = "+mashaNewYear+" рублей");
+        System.out.println("Зар.плата с повыш 10%  = "+mashaNew+" рублей. ");
+        System.out.println("Годовой доход с повыш. = "+mashaNewYear+" рублей");
         System.out.println("Годовой доход вырос на = "+mashaDif+" рублей");
         System.out.println("");
         System.out.println("Сведения о Денисе : ");
-        System.out.println("Получал                = "+denis+" рублей. ");
+        System.out.println("Текущая зар. плата     = "+denis+" рублей. ");
         System.out.println("Текущий Годовой доход  = "+denisYear+" рублей");
-        System.out.println("С повышением 10% зп    = "+denisNew+" рублей. ");
-        System.out.println("Годовой доход составил = "+denisNewYear+" рублей");
+        System.out.println("Зар.плата с повыш 10%  = "+denisNew+" рублей. ");
+        System.out.println("Годовой доход с повыш. = "+denisNewYear+" рублей");
         System.out.println("Годовой доход вырос на = "+denisDif+" рублей");
         System.out.println("");
         System.out.println("Сведения о Кристине : ");
-        System.out.println("Получала               = "+kris+" рублей. ");
+        System.out.println("Текущая зар. плата     = "+kris+" рублей. ");
         System.out.println("Текущий Годовой доход  = "+krisYear+" рублей");
-        System.out.println("С повышением 10% зп    = "+krisNew+" рублей. ");
-        System.out.println("Годовой доход составил = "+krisNewYear+" рублей");
+        System.out.println("Зар.плата с повыш 10%  = "+krisNew+" рублей. ");
+        System.out.println("Годовой доход с повыш. = "+krisNewYear+" рублей");
         System.out.println("Годовой доход вырос на = "+krisDif+" рублей");
         System.out.println("");
     }
