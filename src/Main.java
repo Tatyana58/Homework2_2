@@ -65,7 +65,7 @@ public class Main {
         //
         //Результаты подсчетов выведите в консоль в формате "За … машины произвела бутылок … штук "
         System.out.println("Задание 4 ");
-        byte min2 = 16;
+        byte min2 = 16/2;
         short min20 = (short) (20*min2);
         System.out.println("За 20 минут машины произвела бутылок "+min20+" штук");
         short dayMin=24*60;
@@ -176,9 +176,41 @@ public class Main {
         //Выведите в консоль информацию по каждому сотруднику.
         //Например, "Маша теперь получает **** рублей. Годовой доход вырос на **** рублей".
         System.out.println("Задание 8 ");
-
-
-
+        int masha=67760;
+        int denis=83690;
+        int kris=76230;
+        int mashaYear=masha*12; //подсчитываем годовой доход
+        int denisYear=denis*12;
+        int krisYear=kris*12;
+        int mashaNew=masha+masha*10/100; //прибавка 10%
+        int denisNew=denis+denis*10/100;
+        int krisNew=kris+kris*10/100;
+        int mashaNewYear=mashaNew*12; // годовой доход с прибавкой
+        int denisNewYear=denisNew*12;
+        int krisNewYear=krisNew*12;
+        int mashaDif=mashaNewYear-mashaYear;
+        int denisDif=denisNewYear-denisYear;
+        int krisDif=krisNewYear-krisYear;
+        System.out.println("Сведения о Маше : ");
+        System.out.println("Получала               = "+masha+" рублей. ");
+        System.out.println("Текущий Годовой доход  = "+mashaYear+" рублей");
+        System.out.println("С повышением 10% зп    = "+mashaNew+" рублей. ");
+        System.out.println("Годовой доход составил = "+mashaNewYear+" рублей");
+        System.out.println("Годовой доход вырос на = "+mashaDif+" рублей");
+        System.out.println("");
+        System.out.println("Сведения о Денисе : ");
+        System.out.println("Получал                = "+denis+" рублей. ");
+        System.out.println("Текущий Годовой доход  = "+denisYear+" рублей");
+        System.out.println("С повышением 10% зп    = "+denisNew+" рублей. ");
+        System.out.println("Годовой доход составил = "+denisNewYear+" рублей");
+        System.out.println("Годовой доход вырос на = "+denisDif+" рублей");
+        System.out.println("");
+        System.out.println("Сведения о Кристине : ");
+        System.out.println("Получала               = "+kris+" рублей. ");
+        System.out.println("Текущий Годовой доход  = "+krisYear+" рублей");
+        System.out.println("С повышением 10% зп    = "+krisNew+" рублей. ");
+        System.out.println("Годовой доход составил = "+krisNewYear+" рублей");
+        System.out.println("Годовой доход вырос на = "+krisDif+" рублей");
         System.out.println("");
     }
 }
